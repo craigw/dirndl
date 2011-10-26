@@ -1,0 +1,6 @@
+#! /usr/bin/env ruby
+
+require 'dunder'
+
+command = Dunder::CommandLine.new ARGV
+command.execute
