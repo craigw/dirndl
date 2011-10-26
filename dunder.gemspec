@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "latte"
-  s.add_runtime_dependency "dns-zonefile"
+  s.add_runtime_dependency "dns-zonefile", ">= 1.0.0"
 end
