@@ -1,4 +1,4 @@
-module Dunder
+module Dirndl
   class CommandLine
     initialize_with :arguments
 
@@ -24,7 +24,7 @@ module Dunder
         end
 
         o.on_tail '--version', 'Show version' do
-          puts Dunder::VERSION
+          puts Dirndl::VERSION
           exit
         end
       end.parse arguments

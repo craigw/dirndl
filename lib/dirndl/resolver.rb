@@ -1,4 +1,4 @@
-module Dunder
+module Dirndl
   class Resolver
     initialize_with :zone_db_root_path
 

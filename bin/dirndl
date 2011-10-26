@@ -1,0 +1,6 @@
+#! /usr/bin/env ruby
+
+require 'dirndl'
+
+command = Dirndl::CommandLine.new ARGV
+command.execute

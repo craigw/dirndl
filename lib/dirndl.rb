@@ -13,9 +13,9 @@ require "ostruct"
 require "latte"
 require "dns/zonefile"
 
-require "dunder/version"
-require "dunder/resolver"
-require "dunder/command_line"
+require "dirndl/version"
+require "dirndl/resolver"
+require "dirndl/command_line"
 
-module Dunder
+module Dirndl
 end

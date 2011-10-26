@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in dunder.gemspec
+# Specify your gem's dependencies in dirndl.gemspec
 gemspec
