@@ -2,11 +2,11 @@ module Dirndl
   class Resolver
     initialize_with :zone_db_root_path
 
-    def call query, response
-      zone = load_zone_for query.human_qname
+    def call question, response
+      zone = load_zone_for question.qname
       return unless zone
       zone.records_of(DNS::Zonefile::A).each do |rr|
-        next unless rr.host == query.human_qname
+        next unless rr.host == query.qname
         answer = "#{rr.host} #{rr.klass} A #{rr.ttl} #{rr.address}"
         response.add answer
       end
